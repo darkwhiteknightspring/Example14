@@ -15,38 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class HomeController {
     @RequestMapping(value={"home","","/"})
-    public String displayHomePage(Model model){
-        model.addAttribute("username","Aditya Kumar Sharma");
+    public String displayHomePage(){
         return "home.html";
     }
 }
 
 
-/*
-
-Jakarta.validation.constraints.*
-
-
-@Digits
-@Email
-@Max
-@Min
-@NotBlank
-@NotEmpty
-@NotNull
-@Pattern
-@Size
-
-
-org.hibernate.validator.constraints.*
-
-@CreditCardNumber
-@Length
-@Currency
-@Range
-@URL
-@UniqueElements
-@EAN
-@ISBN
-
- */
